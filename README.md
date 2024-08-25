@@ -27,36 +27,25 @@ This was the central focus of my project and where I dedicated most of my effort
 
 My first task was to reorganize the cluttered options in the Find Panel into a dedicated menu bar. This introductory task helped me get acquainted with Haiku’s development style. Although progress was slow initially due to my inexperience, I learned a lot from this process. Here’s a look at the initial changes and their appearance:
 
-<figure>
-	<img src="./assets/old-find-panel.png" alt="Old Find panel">
-	<center><figcaption>Old Find Panel</figcaption></center>
-</figure>
-
-<figure>
-	<img src="./assets/new-find-panel.png" alt="New Find Panel" width="598px">
-	<center><figcaption>New Find Panel</figcaption></center>
-</figure>
-
+Following is the Old Find Panel present in the Haiku Operating System:
+<br><br>
+<img src="./assets/old-find-panel.png" alt="Old Find panel">
+<br><br>
+And here is the new one:
+<br><br>
+<img src="./assets/new-find-panel.png" alt="New Find Panel" width="598px">
+<br><br>
 ### Adding Folder Filtering Abilities to Searches Executed Through the Find Panel
 
 The second task involved adding folder-based filtering to searches via the Find Panel. This enhancement was implemented at the application layer rather than the file system level. It maintains high search speeds while limiting results to selected directories. Users can now select multiple directories and merge the search results within the results panel. This functionality is accessible through the third drop-down menu from the left.
 
 Users can select directories using the last option in this drop-down menu. This action opens a file panel where they can choose one or more directories (or symbolic links to directories). The selected directories then appear in a clearly visible section within the same drop-down menu. Users also have the option to unselect any directories they no longer want to include.
 
-<figure>
-	<img src="./assets/find-panel-with-directory-selectors.png" alt="New Find Panel Directory Selector" width="598px">
-	<center><figcaption>Selecting Directories in the New Find Panel</figcaption></center>
-</figure>
-
-<figure>
-	<img src="./assets/Selecting-Directories.png" alt="New Find Panel Directory Selector" width="598px">
-	<center><figcaption>Selecting Directories in the New Find Panel (contd.)</figcaption></center>
-</figure>
-
-<figure>
-	<img src="./assets/directories-entries-in-menu.png" alt="New Find Panel Directory Selector" width="598px">
-	<center><figcaption>Selecting Directories in the New Find Panel (contd.)</figcaption></center>
-</figure>
+We can now select these directories for search through the following drop-down menu as shown in the pictures below
+<br><br>
+<img src="./assets/find-panel-with-directory-selectors.png" alt="New Find Panel Directory Selector" width="598px">
+<img src="./assets/Selecting-Directories.png" alt="New Find Panel Directory Selector" width="598px">
+<img src="./assets/directories-entries-in-menu.png" alt="New Find Panel Directory Selector" width="598px">
 
 ### Adding the Design for an Incremental Search Find Panel
 
@@ -65,12 +54,10 @@ The most crucial and challenging aspect of my project was implementing the desig
 Currently, the incremental find panel integrated into the Find Panel results window is under review on GitHub (and soon on Gerrit). It will take some time before it is merged into the main codebase. Despite the challenges, I managed to get the core functionality working, allowing users to pause and restart their queries, as well as adjust search terms, all within the results window without switching back and forth repeatedly.
 
 <img src="./assets/incremental-search-first-look.png" alt="Incremental Search panel">
-<br><br>
 
 The user can select the various methods of combination in the same column. This combination follows the same rules as the searcy "by-attribute" mode in the old find panel. 
 
 <img src="./assets/selecting-combination-options.png" alt="Incremental Search Panel">
-<br><br>
 
 Apart from this, users can pause and re-execute their queries on the file-system without any hassle now. The columns can also be moved around with each other, in order to set more powerful combination modes. The only caveat at the moment is that the two different combination modes for the incremental find panel hasn't been completed. As of now, the columns are always combined using the "AND" operator (so the order does not matter, but this is temporary!)
 
@@ -103,3 +90,7 @@ I’m deeply grateful to the Haiku community and development team for giving me 
 A big thank you to my mentors, Niels Sascha Reedijk and Humdinger, for their ongoing support and guidance throughout the GSoC project. Their timely responses and insightful advice made the process smoother and helped me overcome many challenges and self-doubt.
 
 I’m excited to keep contributing to the Haiku operating system and look forward to future opportunities to grow and learn.
+
+## Keeping Track of this Project
+
+Haiku uses the Gerrit Revision Control system for keeping track of changes and commits. You can find the current status of my project on this changeset: [Haiku Review](https://review.haiku-os.org/c/haiku/+/8096)!
