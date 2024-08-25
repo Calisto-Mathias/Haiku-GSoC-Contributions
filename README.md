@@ -28,12 +28,12 @@ This was the central focus of my project and where I dedicated most of my effort
 My first task was to reorganize the cluttered options in the Find Panel into a dedicated menu bar. This introductory task helped me get acquainted with Haiku’s development style. Although progress was slow initially due to my inexperience, I learned a lot from this process. Here’s a look at the initial changes and their appearance:
 
 <figure>
-	<img src="old-find-panel.png" alt="Old Find panel">
+	<img src="./assets/old-find-panel.png" alt="Old Find panel">
 	<center><figcaption>Old Find Panel</figcaption></center>
 </figure>
 
 <figure>
-	<img src="new-find-panel.png" alt="New Find Panel" width="598px">
+	<img src="./assets/new-find-panel.png" alt="New Find Panel" width="598px">
 	<center><figcaption>New Find Panel</figcaption></center>
 </figure>
 
@@ -44,17 +44,17 @@ The second task involved adding folder-based filtering to searches via the Find 
 Users can select directories using the last option in this drop-down menu. This action opens a file panel where they can choose one or more directories (or symbolic links to directories). The selected directories then appear in a clearly visible section within the same drop-down menu. Users also have the option to unselect any directories they no longer want to include.
 
 <figure>
-	<img src="find-panel-with-directory-selectors.png" alt="New Find Panel Directory Selector" width="598px">
+	<img src="./assets/find-panel-with-directory-selectors.png" alt="New Find Panel Directory Selector" width="598px">
 	<center><figcaption>Selecting Directories in the New Find Panel</figcaption></center>
 </figure>
 
 <figure>
-	<img src="Selecting-Directories.png" alt="New Find Panel Directory Selector" width="598px">
+	<img src="./assets/Selecting-Directories.png" alt="New Find Panel Directory Selector" width="598px">
 	<center><figcaption>Selecting Directories in the New Find Panel (contd.)</figcaption></center>
 </figure>
 
 <figure>
-	<img src="directories-entries-in-menu.png" alt="New Find Panel Directory Selector" width="598px">
+	<img src="./assets/directories-entries-in-menu.png" alt="New Find Panel Directory Selector" width="598px">
 	<center><figcaption>Selecting Directories in the New Find Panel (contd.)</figcaption></center>
 </figure>
 
@@ -64,12 +64,12 @@ The most crucial and challenging aspect of my project was implementing the desig
 
 Currently, the incremental find panel integrated into the Find Panel results window is under review on GitHub (and soon on Gerrit). It will take some time before it is merged into the main codebase. Despite the challenges, I managed to get the core functionality working, allowing users to pause and restart their queries, as well as adjust search terms, all within the results window without switching back and forth repeatedly.
 
-<img src="incremental-search-first-look.png" alt="Incremental Search panel">
+<img src="./assets/incremental-search-first-look.png" alt="Incremental Search panel">
 <br><br>
 
 The user can select the various methods of combination in the same column. This combination follows the same rules as the searcy "by-attribute" mode in the old find panel. 
 
-<img src="selecting-combination-options.png" alt="Incremental Search Panel">
+<img src="./assets/selecting-combination-options.png" alt="Incremental Search Panel">
 <br><br>
 
 Apart from this, users can pause and re-execute their queries on the file-system without any hassle now. The columns can also be moved around with each other, in order to set more powerful combination modes. The only caveat at the moment is that the two different combination modes for the incremental find panel hasn't been completed. As of now, the columns are always combined using the "AND" operator (so the order does not matter, but this is temporary!)
@@ -88,7 +88,7 @@ Here’s what remains to be done in the incremental find panel:
 GSoC’24 with Haiku has been an incredibly rewarding experience. Before starting, I was relatively new to C++ and struggled with using git effectively. Thanks to GSoC, I’ve gained confidence and skills. Although I still have a long way to go, working on Haiku has inspired me to explore further and contribute more to both Haiku and other open-source projects.
 
 Interacting with the Haiku community and receiving their advice has been invaluable. I feel like I’ve made some great friends along the way, which has made the experience even more enjoyable.
-
+./assets/
 Here are some key lessons I’ve learned during my time with Haiku:
 
 1. **Git:** Initially, I struggled with git, having only used it for small projects. Working with Gerrit taught me how to use git more effectively for collaboration. Special thanks to zardshard and waddlesplash for their guidance and resources. I particularly appreciated waddlesplash’s detailed explanation of git fundamentals.
